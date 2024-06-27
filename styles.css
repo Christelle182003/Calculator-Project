@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+body{
+    overflow: hidden;
+    background-color: hsl(268, 75%, 9%);
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.calculator{
+    width: 400px;
+    height: 225px;
+    padding: 100px;
+    margin: 50px 375px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    color: hsl(52, 100%, 62%);
+}
+
+.right-header{
+    /* display: flex; */
+    /* flex-direction: column; */
+    line-height: 10px;
+}
+
+.input{
+    border: 0px solid;
+    border-radius: 10px;
+    width: 420px;
+    height: 50px;
+    background-color:hsl(268, 71%, 12%) ;
+    color:hsl(52, 100%, 62%) ;
+    margin-bottom: 15px;
+    text-align: end;
+    padding: 10px;
+}
+
+
+
+.touches{
+    background-color: hsl(268, 71%, 12%);
+    width: 400px;
+    height: 255px;
+    padding: 20px;
+}
+
+.touches-primaires{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .625rem;
+    
+}
+
+.number{
+    background-color: hsl(281, 89%, 26%);
+    /* border: 1 solid;  */
+    border-radius: 10px;
+    border-color: hsl(285, 91%, 52%);
+    padding: 10px;
+    color: hsl(52, 100%, 62%);
+    font-size: 20px;
+
+}
+
+#del{
+    background-color: hsl(290, 70%, 36%);
+    border-radius: 10px;
+    border-color: hsl(285, 91%, 52%);
+    color: #ffffff;
+}
+
+
+
+.touches-secondaires{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .625rem;
+    margin-top: .625rem;
+}
+
+#reset{
+    background-color: hsl(290, 70%, 36%);
+    height: 40px;
+    border-radius: 10px;
+    border-color: hsl(285, 91%, 52%);
+    color: #ffffff;
+}
+
+#egal{
+    background-color: hsl(176, 100%, 44%);
+    border-radius: 10px;
+    border-color: hsl(177, 92%, 70%);
+    color:#000000;
+}
