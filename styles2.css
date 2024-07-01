@@ -28,12 +28,6 @@ body{
 }
 
 
-.theme-switch-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
 .theme-switch {
     position: relative;
@@ -43,60 +37,36 @@ body{
     margin: 0 10px;
 }
 
-/* .theme-switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-} */
 
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: hsl(223, 31%, 20%);
-    transition: .4s;
-    border-radius: 34px;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: hsl(6, 63%, 50%);
-    transition: .4s;
-    border-radius: 50%;
-}
 
 input:checked + .slider {
     background-color: hsl(268, 71%, 12%);
 }
 
-input:checked + .slider:before {
-    transform: translateX(26px);
-}
 
-.slider.round {
-    border-radius: 34px;
-}
 
-.slider.round:before {
-    border-radius: 50%;
+.theme-toggle {
+    width: 50px;
+    height: 15px;
+    background-color: hsl(0, 5%, 81%);
+    margin: 5px 0;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.4s;
 }
-
-.theme-labels {
-    display: flex;
-    justify-content: space-between;
-    width: 60px;
-    color: hsl(52, 100%, 62%);
-    font-weight: bold;
+.theme-toggle:after  {
+    content: "";
+    width: 12px;
+    height: 12px;
+    top: 2px;
+    left: 16px;
+    border-radius: 10px;
+    position: absolute;
+    transition: 0.4s;
+    background-color: hsl(6, 63%, 50%);
 }
-
 
 
 
@@ -132,7 +102,6 @@ input:checked + .slider:before {
     background-color: hsl(0, 0%, 100%);
     /* border: 1 solid;  */
     border-radius: 10px;
-    border-color: hsl(224, 28%, 35%);
     box-shadow: 2px 2px 4px hsl(224, 28%, 35%);
     padding: 10px;
     color: hsl(225, 21%, 49%);
@@ -143,11 +112,12 @@ input:checked + .slider:before {
 
 #del{
     background-color: hsl(225, 21%, 49%);
+    box-shadow: 2px 2px 4px hsl(224, 28%, 35%);
+    border: 0;
     border-radius: 10px;
-    border-color: hsl(0, 0%, 100%);
     color: #ffffff;
+    font-weight: bold;
 }
-
 
 
 .touches-secondaires{
@@ -161,16 +131,17 @@ input:checked + .slider:before {
     background-color: hsl(225, 21%, 49%);
     height: 40px;
     border-radius: 10px;
-    border-color: hsl(300, 100%, 100%);
+    box-shadow: 2px 2px 4px hsl(224, 28%, 35%);
+    border: 0;
     color: #ffffff;
 }
 
 #egal{
     background-color: hsl(6, 63%, 50%);
     border-radius: 10px;
+    border: 0;
     box-shadow: 2px 2px 4px hsl(6, 70%, 34%);
     height: 40px;
-    border-color: hsl(177, 92%, 70%);
     color:#ffffff;
 }
 

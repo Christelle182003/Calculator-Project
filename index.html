@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" id="theme-style" href="styles.css">
+    <!-- <link rel="stylesheet" id="theme-style" href="styles2.css"> -->
+     <!-- <link rel="stylesheet" id="theme-style" href="styles3.css"> -->
     <title>Document</title>
 </head>
 <body>
@@ -14,8 +15,15 @@
                 <h4>calc</h4>
             </div>
             <div class="right-header">
-                <h6>THEME</h6>
-                <div class="theme-switch-wrapper">
+                <div class="menu" style="display: flex; align-items:flex-end;">
+                    <p style="font-size: 12px; margin: 7px 15px;">Theme</p>
+                    <div class="toggle" style="font-size: 8px;flex-direction: column; ">
+                        <p>1 &nbsp; &nbsp; &nbsp; 2 &nbsp; &nbsp; &nbsp; 3</p>
+                        <button class="theme-toggle" id="theme-toggle"></button>
+                    </div>
+                </div>
+                <!-- <h6>THEME</h6> -->
+                <!-- <div class="theme-switch-wrapper">
                     <div class="theme-labels">
                         <span>1</span>
                         <span>2</span>
@@ -26,7 +34,7 @@
                         <span class="slider round"></span>
                     </label>
                     
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="input">
@@ -37,7 +45,7 @@
                 <button data-key="103" class="number" onclick="">7</button>
                 <button data-key="104" class="number" onclick="">8</button>
                 <button data-key="105" class="number" onclick="">9</button>
-                <button data-key="8" id="del" type="button" onclick="">DEL</button>
+                <button data-key="8" id="del" type="button" onclick="" >DEL</button>
                 <button data-key="100" class="number" onclick="">4</button>
                 <button data-key="101" class="number" onclick="">5</button>
                 <button data-key="102" class="number" onclick="">6</button>

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 body{
     overflow: hidden;
-    background-color: hsl(268, 75%, 9%);
+    background-color: hsl(0, 0%, 90%);
     font-family: "League Spartan", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -18,7 +18,7 @@ body{
 .header{
     display: flex;
     justify-content: space-between;
-    color: hsl(52, 100%, 62%);
+    color: hsl(0, 0%, 0%);
 }
 
 .right-header{
@@ -43,7 +43,7 @@ body{
     width: 12px;
     height: 12px;
     top: 2px;
-    left: 8px;
+    left: 33px;
     border-radius: 10px;
     position: absolute;
     transition: 0.4s;
@@ -54,8 +54,8 @@ body{
     border-radius: 10px;
     width: 420px;
     height: 50px;
-    background-color:hsl(268, 71%, 12%) ;
-    color:hsl(52, 100%, 62%) ;
+    background-color:hsl(0, 0%, 93%) ;
+    color:hsl(0, 0%, 0%) ;
     margin-bottom: 15px;
     text-align: end;
     padding: 10px;
@@ -64,7 +64,7 @@ body{
 
 
 .touches{
-    background-color: hsl(268, 71%, 12%);
+    background-color: hsl(0, 5%, 81%);
     width: 400px;
     height: 255px;
     padding: 20px;
@@ -78,20 +78,21 @@ body{
 }
 
 .number{
-    background-color: hsl(281, 89%, 26%);
-    /* border: 1 solid;  */
+    background-color: hsl(45, 7%, 89%);
+    border: 0;
     border-radius: 10px;
-    border-color: hsl(285, 91%, 52%);
     padding: 10px;
-    color: hsl(52, 100%, 62%);
+    color: hsl(60, 10%, 19%);
+    box-shadow: 1px 3px 1px  hsl(35, 11%, 61%);
     font-size: 20px;
 
 }
 
 #del{
-    background-color: hsl(290, 70%, 36%);
+    background-color: hsl(185, 42%, 37%);
+    border: 0;
     border-radius: 10px;
-    border-color: hsl(285, 91%, 52%);
+    box-shadow: 1px 3px 1px  hsl(185, 58%, 25%);
     color: #ffffff;
 }
 
@@ -105,16 +106,18 @@ body{
 }
 
 #reset{
-    background-color: hsl(290, 70%, 36%);
+    background-color: hsl(185, 42%, 37%);
     height: 40px;
     border-radius: 10px;
-    border-color: hsl(285, 91%, 52%);
+    border: 0;
+    box-shadow: 1px 3px 1px  hsl(185, 58%, 25%);
     color: #ffffff;
 }
 
 #egal{
-    background-color: hsl(176, 100%, 44%);
+    background-color: hsl(25, 98%, 40%);
     border-radius: 10px;
-    border-color: hsl(177, 92%, 70%);
-    color:#000000;
+    border: 0;
+    box-shadow: 1px 3px 1px hsl(25, 99%, 27%);
+    color:#ffffff;
 }
